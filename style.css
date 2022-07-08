@@ -22,3 +22,17 @@ align-items: center;
 .Black-body h1 {
     color: rgb(239, 210, 45);
 }
+
+.Black-body p {
+    font-size: 1.3rem;
+    color: rgb(239, 210, 45);
+}
+
+.Black-body button {
+    text-transform: uppercase;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    width: 10rem;
+    padding: .5rem;
+    margin: .7rem;
+}
