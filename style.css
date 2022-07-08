@@ -14,4 +14,11 @@ justify-content: center;
 align-items: center;
 }
 
-.Black-body {}
+.Black-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Black-body h1 {
+    color: rgb(239, 210, 45);
+}
