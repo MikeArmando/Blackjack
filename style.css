@@ -5,5 +5,13 @@ body {
 }
 
 .background {
-    
+background-image: url(/img/eyestetix-studio-hdVQBey2LaI-unsplash.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+.Black-body {}
