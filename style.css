@@ -5,13 +5,14 @@ body {
 }
 
 .background {
-background-image: url(/img/eyestetix-studio-hdVQBey2LaI-unsplash.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-image: url(/img/eyestetix-studio-hdVQBey2LaI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Black-body {
@@ -23,14 +24,14 @@ align-items: center;
 
 .Black-body h1 {
     text-transform: uppercase;
-    color: rgb(229, 194, 0);
+    color: rgb(255, 200, 0);
     margin: 0;
     padding: 0;
 }
 
 .Black-body p {
     font-size: 1.3rem;
-    color: rgb(229, 194, 0);
+    color: rgb(255, 200, 0);
 }
 
 .Black-body button {
