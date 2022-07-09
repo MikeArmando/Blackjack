@@ -31,6 +31,7 @@ align-items: center;
 .Black-body button {
     text-transform: uppercase;
     border: 2px solid goldenrod;
+    font-size: 1rem;
     cursor: pointer;
     width: 10rem;
     padding: .5rem;
