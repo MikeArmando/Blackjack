@@ -24,20 +24,22 @@ body {
 
 .Black-body h1 {
     text-transform: uppercase;
-    color: rgb(255, 200, 0);
+    color: white;
     margin: 0;
     padding: 0;
 }
 
 .Black-body p {
     font-size: 1.3rem;
-    color: rgb(255, 200, 0);
+    color: white;
 }
 
 .Black-body button {
     text-transform: uppercase;
-    border: 2px solid goldenrod;
-    font-size: 1rem;
+    background-color: rgb(209, 159, 32);
+    color: white;
+    border: 1.7px solid;
+    font-size: 1.1rem;
     cursor: pointer;
     width: 10rem;
     padding: .5rem;
