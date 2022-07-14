@@ -36,12 +36,17 @@ body {
 
 .Black-body button {
     text-transform: uppercase;
-    background-color: rgb(209, 159, 32);
+    background-color: transparent;
+    transition: all .4s linear;
     color: white;
     border: 1.7px solid;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     width: 10rem;
     padding: .5rem;
     margin: .7rem;
+}
+
+.Black-body button:hover {
+    background-color: rgb(198, 149, 24)
 }
