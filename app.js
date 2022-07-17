@@ -18,6 +18,7 @@ let blackjack = false
 let sum = 0
 let cards = []
 
+// start button function
 startGameBtn.addEventListener("click", function () {
     document.getElementById("start-btn").disabled = true
     document.getElementById("new-card-btn").disabled = false
@@ -35,6 +36,7 @@ startGameBtn.addEventListener("click", function () {
     renderGame()
 })
 
+// new card button function
 newCardBtn.addEventListener("click", function () {
     newCard()
 })
@@ -51,6 +53,7 @@ function getRandomCard() {
     }
 }
 
+// displays the cards, sum, and the messages
 function renderGame() {
     message.textContent = "Want to draw a new card?"
 
@@ -68,6 +71,7 @@ function renderGame() {
     sumEl.textContent = "Sum: " + sum
 }
 
+// checks if the player is alive, has blackjack, and it add a new card
 function newCard() {
     if (alive === true && blackjack === false) {
         let card = getRandomCard()
