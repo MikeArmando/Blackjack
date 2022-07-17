@@ -6,7 +6,7 @@ const newCardBtn = document.getElementById("new-card-btn")
 document.getElementById("new-card-btn").disabled = true
 
 // Grabs the phrase text
-let gameText = document.getElementById("game-text")
+let message = document.getElementById("game-text")
 
 // Grabs the "cards:" text and the "sum:" text
 let cardsEl = document.getElementById("cards")
@@ -52,17 +52,27 @@ function getRandomCard() {
 }
 
 function renderGame() {
+    message.textContent = "Want to draw a new card?"
+
     cardsEl.textContent = "Cards: "
     for (let c = 0; c < cards.length; c++) {
         cardsEl.textContent += cards[c] + " "
+    }
+
+    if (sum === 21) {
+        message.textContent = "Blackjack!"
+    } else if (sum > 20) {
+        message.textContent = "You lose!"
     }
 
     sumEl.textContent = "Sum: " + sum
 }
 
 function newCard() {
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    renderGame()
+    if (alive === true && blackjack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
 }
